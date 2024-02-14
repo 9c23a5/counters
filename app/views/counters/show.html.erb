@@ -1,6 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @counter %>
+<%= turbo_stream_from @counter %>
+
+<%= render 'counters/counter', counter: @counter %>
 
 <div>
   <%= link_to "Edit this counter", edit_counter_path(@counter) %> |

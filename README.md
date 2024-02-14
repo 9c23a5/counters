@@ -1,24 +1,18 @@
-# README
+# counters
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A basic Rails app for counting things.
 
-Things you may want to cover:
+## Motivation
 
-* Ruby version
+I wanted a project that is simple on the database/ActiveRecord side so I can focus primarirly on learning frontend stuff.
 
-* System dependencies
+## Features
 
-* Configuration
+- Count gets synchronized between pages using Turbo Streams
 
-* Database creation
+## Todo
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Properly SPA the app
+- Preview the count on index and use Turbo Streams on it aswell
+- Learn ViewComponents and apply what I can here
+- Style the webpage: Learn Sass, bonus points if get Tailwind working

@@ -37,7 +37,11 @@ class CountersController < ApplicationController
   def increment
     @counter = Counter.find(params[:id])
     @counter.increment!(:value)
-    redirect_to counter_url(@counter)
+
+    respond_to do |format|
+      format.html { redirect_to counter_url(@counter) }
+      format.turbo_stream
+    end
   end
 
   def reset
